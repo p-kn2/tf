@@ -8,5 +8,14 @@ terraform {
 }
 
 provider "aws" {
-    # configuration options
+    region = "us-west-2"
+}
+
+resource "aws_instance" "myserver" {
+    ami = "ami-0786adace1541ca80"
+    instance_type = "t3.micro"
+}
+
+tags = {
+    Name = "SampleServer"
 }
