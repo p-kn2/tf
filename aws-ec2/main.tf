@@ -11,7 +11,7 @@ provider "aws" {
     region = var.region
 }
 
-resource "aws_instance" "myserver1" {
+resource "aws_instance" "myserver2" {
     ami = "ami-0786adace1541ca80"
     instance_type = "t3.micro"
 
