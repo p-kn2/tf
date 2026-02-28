@@ -17,6 +17,6 @@ resource "aws_instance" "myserver1" {
 
 
     tags = {
-        Name = "SampleServer"
+        Name = "SampleServer2"
     }
 }
